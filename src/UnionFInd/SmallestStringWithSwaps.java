@@ -49,7 +49,7 @@ public class SmallestStringWithSwaps {
     }
 
     private int find(int a){//找到该连通块的
-        if(parent[a]==[a])
+        if(parent[a]==a)
             return a;
         parent[a] = find(parent[a]);
         return parent[a];
